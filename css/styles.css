@@ -1682,6 +1682,10 @@ img {
   }
 }
 
+.site-footer {
+  display: none;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
