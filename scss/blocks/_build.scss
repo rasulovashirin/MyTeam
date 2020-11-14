@@ -1,0 +1,137 @@
+.build {
+  position: relative;
+  z-index: 1;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #012F34;
+  background-image: url("../../img/build-bg.svg");
+  background-position: calc(50% + 760px) calc(50% + 190px);
+  background-repeat: no-repeat;
+  background-size: 200px 244px;
+}
+.build__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+.build__heading {
+  max-width: 445px;
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+}
+.build__heading::before{
+  position: absolute;
+  z-index: 1;
+  top: 140px;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #F67E7E;
+  content: "";
+}
+.build__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.build__item{
+  max-width: 540px;
+}
+.build__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@include breakpoint-down (1120){
+  .build{
+    padding-top: 100px;
+    background-position: calc(50% + 383px) top;
+  }
+  .build__container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+  .build__heading{
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 64px;
+    text-align: center;
+    &::before{
+      top: 100px;
+    }
+  }
+  .build__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+  .build__item{
+    max-width: 573px;
+  }
+}
+@include breakpoint-down (800){
+  .build__container{
+    padding-left: 50px;
+    padding-right:50px;
+  }
+  .build__heading{
+    max-width: 445px;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: left;
+    &::before{
+      top: 100px;
+    }
+  }
+  .build__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+      align-self: flex-end;
+  }
+  .build__item{
+    max-width: 573px;
+  }
+}
+@include breakpoint-down (750){
+  .build{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .build__container{
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .build__heading{
+    &::before{
+      top: 64px;
+    }
+  }
+  .build__list{
+    align-self: center;
+    max-width: 327px;
+  }
+}
+@include breakpoint-down (500){
+
+  .build__heading{
+    max-width: 240px;
+    &::before{
+      top: 64px;
+    }
+  }
+  .build__item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}

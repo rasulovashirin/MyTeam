@@ -1,0 +1,79 @@
+.site-header {
+  padding-top: 73px;
+  padding-bottom: 73px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin-right: 80px;
+}
+.site-header__humburger-button{
+  display: none;
+}
+.site-header__opened-box{
+  flex-grow: 1;
+}
+@include breakpoint-down (800) {
+  .site-header{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+}
+@include breakpoint-down (650){
+  .site-header{
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .site-header__opened-box{
+    display: none;
+  }
+  .site-header__humburger-button{
+    position: relative;
+    z-index: 100;
+    display: block;
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/humburger.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+  .site-header__humburger-button::before{
+    position: absolute;
+    z-index: 102;
+    top: -50%;
+    left: -50%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    content: "";
+  }
+  .site-header--open .site-header__opened-box{
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color:  rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+  .site-header--open .site-header__humburger-button{
+    background-image: url("../img/close.svg");
+  }
+}
+@include breakpoint-down (400){
+  .site-header__container{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+}

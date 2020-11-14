@@ -1,0 +1,69 @@
+.sitenav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav__item + .sitenav__item {
+  margin-left: 40px;
+}
+
+.sitenav__link {
+  color: #fff;
+  text-transform: lowercase;
+  text-decoration: none;
+  font-size: 18px;
+line-height: 28px;
+}
+
+.sitenav__link:hover {
+  color: #F67E7E;
+}
+
+.sitenav__link:active {
+  opacity: 0.7;
+}
+
+.sitenav__contact-button {
+  margin-left: auto;
+}
+
+@include breakpoint-down (600){
+  .site-header--open .sitenav{
+    position: fixed;
+    z-index: 49;
+    top: 0;
+    right: 0;
+    width: 68%;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    background-color: #2C6269;
+    padding-top: 112px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .site-header--open .sitenav__list{
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+  .site-header--open .sitenav__item + .sitenav__item{
+    margin-left: 0;
+  }
+  .site-header--open .sitenav__item:not(:last-child){
+    margin-bottom: 24px;
+  }
+  .site-header--open .sitenav__contact-button {
+    margin-left: 0;
+  }
+
+}

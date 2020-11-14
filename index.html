@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myteam_home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a class="logo site-header__logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="my team logo" width="160" height="40">
+      </a>
+
+      <div class="site-header__opened-box">
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="index.html" class="sitenav__link">home</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="about.html" class="sitenav__link">about</a>
+            </li>
+          </ul>
+
+          <a href="#" class="button button--light sitenav__contact-button">contact us</a>
+        </nav>
+      </div>
+
+      <button class="site-header__humburger-button"></button>
+
+
+    </div>
+
+  </header>
+
+  <script>
+
+    var elHumburgerButton = document.querySelector('.site-header__humburger-button');
+    var elSiteHeader = document.querySelector('.site-header');
+
+    elHumburgerButton.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('site-header--open');
+    });
+
+  </script>
+
+  <main class="site-main">
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__heading">Find the best <span class="hero__heading-red">talent</span></h1>
+        <p class="hero__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+      </div>
+    </section>
+
+    <section class="build">
+      <div class="container build__container">
+        <h2 class="build__heading">Build & manage distributed teams like no one else.</h2>
+        <ul class="build__list">
+          <li class="build__item info info--expert">
+            <div class="info__wrapper">
+              <h3 class="info__heading">Experienced Individuals</h3>
+              <p class="info__text">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+            </div>
+          </li>
+          <li class="build__item info info--easy">
+            <div class="info__wrapper">
+              <h3 class="info__heading">Easy to Implement</h3>
+              <p class="info__text">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+            </div>
+          </li>
+          <li class="build__item info info--productivity">
+            <div class="info__wrapper">
+              <h3 class="info__heading">Enhanced Productivity</h3>
+              <p class="info__text">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stories">
+      <div class="container stories__container">
+        <h2 class="stories__heading">Delivering real results for top companies. Some of our <span class="stories__heading-blue">success stories.</span></h2>
+        <ul class="stories__list">
+          <li class="stories__item story story--kady">
+            <blockquote class="story__text"> “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</blockquote>
+            <p class="story__name">Kady Baker</p>
+            <p class="story__job">Product Manager at Bookmark</p>
+          </li>
+
+          <li class="stories__item story story--aiysha">
+            <blockquote class="story__text">“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</blockquote>
+            <p class="story__name">Aiysha Reese</p>
+            <p class="story__job">Founder of Manage</p>
+          </li>
+
+          <li class="stories__item story story--arthur">
+            <blockquote class="story__text">“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</blockquote>
+            <p class="story__name">Arthur Clarke</p>
+            <p class="story__job">Co-founder of MyPhysio</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="demo">
+      <div class="container demo__container">
+        <h2 class="demo__heading">Ready to get started?</h2>
+        <a href="#" class="button button--dark">contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__container">
+      <div class="site-footer__left">
+        <a class="logo site-footer__logo" href="index.html">
+          <img class="logo__img site-footer__logo-img" src="img/logo.svg" alt="my team logo" width="160" height="40">
+        </a>
+
+        <ul class="site-footer__list">
+          <li class="site-footer__item">
+            <a href="#" class="site-footer__link">home</a>
+          </li>
+          <li class="site-footer__item">
+            <a href="#" class="site-footer__link">about</a>
+          </li>
+        </ul>
+      </div>
+      <div class="site-footer__center">
+        <address class="site-footer__address">987  Hillcrest Lane <br> Irvine, CA <br> California 92714</address>
+        <a href="tel:9498337432" class="site-footer__tel-link">Call Us : 949-833-7432</a>
+      </div>
+      <div class="site-footer__right">
+        <ul class="site-footer__socials-list socials">
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+            <img class="socials__img" src="img/facebook.svg" alt="facebook" width="24" height="24">
+          </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+            <img class="socials__img" src="img/pinterest.svg" alt="pinterest" width="24" height="24">
+          </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="#">
+            <img class="socials__img" src="img/twitter.svg" alt="twitter" width="24" height="24">
+          </a>
+          </li>
+        </ul>
+        <p class="site-footer__copyright">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

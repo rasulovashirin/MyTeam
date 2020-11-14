@@ -1,0 +1,138 @@
+.director {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #012F34;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  padding-right: 24px;
+  padding-left: 24px;
+  text-align: center;
+  &::before{
+    display: block;
+    width: 96px;
+    height: 96px;
+    margin-bottom: 16px;
+    background-image: url("../img/nikita.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.director--nikita {
+  &::before{
+    background-image: url("../img/nikita.png");
+  }
+}
+
+.director--cristian {
+  &::before{
+    background-image: url("../img/cristian.png");
+  }
+}
+.director--cruz {
+  &::before{
+    background-image: url("../img/cruz.png");
+  }
+}
+.director--drake {
+  &::before{
+    background-image: url("../img/drake.png");
+  }
+}
+.director--griffin {
+  &::before{
+    background-image: url("../img/driffin.png");
+  }
+}
+.director--aden {
+  &::before{
+    background-image: url("../img/cristian.png");
+  }
+}
+.director__name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+  text-align: center;
+}
+.director__job {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+.director__button{
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background-color: #F67E7E;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../../img/plus.svg");
+  background-position: center center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+}
+.director__button:focus{
+  outline: 0;
+}
+.director--open .director__info{
+  display: block;
+}
+.director--open .director__button{
+  background-color:  #79C8C7;
+  transform:translate(-50%, -50%) rotate(45deg);
+}
+.director__info {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color:#012F34;
+  padding-top: 35px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.director__name--info{
+  margin-bottom: 8px;
+}
+.director__text {
+  max-width: 254px;
+  margin: 0;
+  margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.director__socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.director__socials-item:not(:last-child) {
+margin-right: 16px;
+}
+.director__socials-link {
+}
+.director__socials-img {
+  width: 24px;
+  height: 20px;
+}

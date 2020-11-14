@@ -1,0 +1,62 @@
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 36px;
+  text-align: center;
+  background-image: url("../../img/nail.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 67px 56px;
+}
+.story::after{
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  content: "";
+}
+.story--kady::after {
+  background-image: url("../img/kady.png");
+}
+.story--aiysha::after {
+  background-image: url("../img/aiysha.png");
+}
+.story--arthur::after {
+  background-image: url("../img/arthur.png");
+}
+.story__text {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}
+.story__name {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+
+}
+.story__job {
+  margin: 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 32px;
+}
+
+
+@include breakpoint-down(700){
+  .story__text{
+    margin-bottom: 16px;
+  }
+  .story__job{
+    margin-bottom: 16px;
+  }
+}

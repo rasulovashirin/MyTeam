@@ -1,0 +1,21 @@
+.logo {
+  /* min-width: 160px; */
+  flex-shrink: 0;
+}
+
+.logo:active {
+  opacity: 0.7;
+}
+
+.logo__img {
+  display: block;
+  max-width: 160px;
+  height: 40px;
+}
+@include breakpoint-down (800) {
+  .logo__img{
+   width: 128px;
+   height: 32px;
+  }
+
+}
