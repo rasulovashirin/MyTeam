@@ -14,8 +14,17 @@
 }
 @include breakpoint-down (800) {
   .logo__img{
-   width: 128px;
-   height: 32px;
+    width: 128px;
+    height: 32px;
   }
 
+}
+@include breakpoint-down (500){
+
+  .logo__img{
+    width: 96px;
+    height: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
