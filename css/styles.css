@@ -511,6 +511,10 @@ img {
     height: 100%;
   }
   .site-header--open .site-header__humburger-button {
+    position: fixed;
+    z-index: 102;
+    top: 55px;
+    right: 40px;
     background-image: url("../img/close.svg");
   }
 }
